@@ -16,7 +16,6 @@ def send_email(subject, message):
     password = os.getenv('EMAIL_PASSWORD')
     smtp_server = os.getenv('SMTP_SERVER')
     smtp_port = int(os.getenv('SMTP_PORT'))
-    print(sender_email,password)
     # Compose email
     msg = MIMEText(message)
     msg['Subject'] = subject
